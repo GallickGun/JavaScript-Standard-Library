@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: 'Gallick',
+            lastName: "Gun"
+        };
+
+        // Object.freeze(person); // no addition
+
+        // person.firstName = "Diubah"; //tidak berubah
+        // delete person.lastName; //tidak berubah. Seal() makes lastName attriibute indelible 
+        // console.info(person)
+
+        // const target = {firstName: 'Energy'};
+        // const source = {lastName: 'Blast'}
+
+        // Object.assign(target, source);
+        // console.info(target); // Energy Blast
+
+        console.info(Object.values(person));
+        console.info(Object.getOwnPropertyNames(person));
+    </script>
+</body>
+</html>
