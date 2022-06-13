@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regex</title>
+</head>
+<body>
+    <script>
+        {
+         //create regex
+        // const regex1= /gallick/
+        // const regex2 = new RegExp('[gallick]')
+        // const regex3 = new RegExp(/[gallick]/)
+        }
+
+        {
+            //test regex
+            // const name = 'gallick gun super gallick'
+            // const regex = /gallick/;
+
+            // const result = regex.exec(name);
+            // console.info(result);
+
+            // const test = regex.test(name);
+            // console.info(test);
+
+        }
+
+        {
+            // regex modifier
+
+            // const name1 = 'gallick gun\ngAllick gun\nGun GalliCk';
+            // const regex1= /^gallick/ig
+            // const regex2 = /Gun/ig
+
+            // let result;
+            // while((result = regex1.exec(name1)) !== null){
+            //     console.info(result);
+            // }
+        }
+
+        {
+            //advanced regex
+            const regex5 = /gal[a-z]/ig
+            const names = 'gallick gallant global gimmick gas'
+            let result;
+            while((result =regex5.exec(names)) !== null) {
+                console.info(result);
+            }
+
+        }
+    </script>
+</body>
+</html>
